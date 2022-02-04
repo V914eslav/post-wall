@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./PostListItem.css";
 const PostListItem = () => {
   return (
     <li className="app-list-item d-flex justify-content-between">
