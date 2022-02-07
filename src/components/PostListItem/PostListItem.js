@@ -8,6 +8,7 @@ export default class PostListItem extends Component {
       important: false,
       like: false,
     };
+
     this.onImportant = this.onImportant.bind(this);
     this.onLike = this.onLike.bind(this);
   }
@@ -24,7 +25,7 @@ export default class PostListItem extends Component {
     }));
   }
   render() {
-    const { label } = this.props;
+    const { label, onDelete } = this.props;
     const { important, like } = this.state;
     let classNames = "app-list-item d-flex justify-content-between";
     if (important) {
@@ -35,7 +36,7 @@ export default class PostListItem extends Component {
     }
     return (
       <div className={classNames}>
-        <span className="app-list-item_label">{label}</span>
+        <span className=" app-list-item-label">{label}</span>
         <div className="d-flex justify-content-center align-items-center">
           <button
             type="button"
@@ -45,7 +46,7 @@ export default class PostListItem extends Component {
             <i className="bi bi-star-fill"></i>
           </button>
           <button type="button" className="btn-trash btn-sm">
-            <i className="bi bi-trash"></i>
+            <i className="bi bi-trash" onClick={onDelete}></i>
           </button>
           <button
             onClick={this.onLike}

@@ -29,7 +29,7 @@
   transition: 0.5s all;
 }
 
-.app-list-item.important.app-list-item-label {
+.app-list-item.important .app-list-item-label {
   color: #ffd700;
 }
 
