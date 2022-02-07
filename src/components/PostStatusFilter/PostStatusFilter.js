@@ -7,9 +7,9 @@ const PostSatusFilter = () => {
       <Button outline color="info">
         Все
       </Button>
-      <button type="button" className="btn btn-info">
+      {/* <button type="button" className="btn btn-info">
         Все
-      </button>
+      </button> */}
       <button type="button" className="btn btn-outline-secondary">
         Понравилось
       </button>
