@@ -31,11 +31,7 @@ export default class PostAddForm extends Component {
           onChange={this.onValueChange}
           value={this.state.text}
         />
-        <button
-          // onClick={() => onAdd("hello")}
-          type="submit"
-          className="btn btn-outline-secondary"
-        >
+        <button type="submit" className="btn btn-outline-secondary">
           Добавить
         </button>
       </form>
